@@ -1,31 +1,45 @@
 .restaurant-Home
-    height: 450px
+    height: 650px
     display: flex
     justify-content: space-around
     align-content: center
     padding: auto
-    padding-top: 40px
-    // margin: 20
+    padding-top: 140px
     background-color: #f2f2f2
+    img
+        vertical-align: 50px
+        animation: mymove 5s infinite
+        @keyframes mymove
+            50% 
+                vertical-align: 100px
+
     h1
         font-family: cursive
-        width: 90%
+      
     .left
-       width: 30%
-       height: 250px 
+  
        padding-top: 100px
        font-size: large    
     .leftside
-        width: 90%
-        height: 250
         padding-top: 50px
         padding:20px
     button
         color: white
         background-color: #d33333
-    .btn
-        background-color: transparent
+    a
+        text-decoration: none
         color: black
+        text-align: center
+        &:hover
+            color: red    
+    i
+        color: red
+    .liens
+        display: flex
+        justify-content: space-evenly
+        align-items: center
+        flex-direction: row
+        text-align: center
 .restaurant-about
     text-align: center
     padding: 20px
@@ -38,9 +52,84 @@
         display: flex
         justify-content: space-evenly
         align-content: center
+        padding: 10px
+       
     .sous-img
         border: 2px solid black
         padding: 10px
+        margin-top: 5px 
+        font-size: x-large
     .rightside-icons
         width: 40%
-        padding: 50px
+        .rightside-icon 
+            display: flex
+            flex-direction: row
+            padding: 10px
+.whychooseymmy
+    display: flex
+    flex-direction: row
+    align-items: center 
+    text-align: center
+    justify-content: space-evenly
+    background-color: #f2f2f2
+    height: 80vh
+    #card1
+        width: 25vw
+        height: 70vh
+        padding: 10px
+        background-color: #ce1212
+        color: white 
+        button
+            background-color: #d01d1d
+            &:hover
+                background-color: white 
+                color: red        
+    .card
+        width: 20vw
+        height: 70vh
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-content: center
+        text-align: center
+        gap: 10px
+        padding: 10px
+        i
+            text-align: center
+            width: 10%
+            color: red
+            background-color: #ebddd8 
+            
+            &:hover
+                background: red 
+                color: white
+
+@media (max-width :428px)
+    .restaurant-Home
+        flex-direction: column-reverse
+        width: 100%
+        padding-top: 120px 
+        img
+            width: 90%
+    .globale
+        flex-direction: column
+        width: 100%
+        img
+            width: 100%
+        .rightside-icons
+            width: 100%
+            .rightside-icon
+                width: 100%
+        video
+            width: 90%        
+    .whychooseymmy
+        width: 100%
+        flex-direction: column
+        #card1
+            width: 100%
+            margin-top: 10px
+        .card
+            width: 100%
+            margin-top: 10px
+
+
