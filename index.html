@@ -1,16 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./public/css/app.css">
 </head>
+
 <body>
-   
+    <header>
+        <nav>
+
+            <div class="leftside-menu">
+                <h1>Yuumy</h1>
+                <div class="point">.</div>
+            </div>
+            <input id="Check" type="checkbox" class="Check">
+            <div class="menu">
+                <a href="#restaurant-Home">Home</a>
+                <a href="#restaurant-about">About </a>
+                <a href="#restaurant-menu">Menu</a>
+                <a href="#restaurant-events">Events</a>
+                <a href="#restaurant-chefs">Chefs</a>
+                <a href="#restaurant-gallery">Gallery</a>
+                <a href="#">Drop Down</a>
+                <a href="#restaurant-contact">Contact</a>
+
+            </div>
+
+            <button modal-data="testModal" class="btn-modal">login</button>
+
+            <div id="testModal" class="backdrop">
+                <div class="modal">
+                    <div class="modal-title">
+                        <h2>login</h2>
+                    </div>
+
+                    <div class="modal-body">
+                        <form role="form">
+                            <div class="form-group">
+                                <label for="usrname"> Username</label>
+                                <input type="text" class="form-control" id="usrname" placeholder="Enter email">
+                            </div>
+                            <div class="form-group">
+                                <label for="psw"> Password</label>
+                                <input type="text" class="form-control" id="psw" placeholder="Enter password">
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" value="" checked>Remember me</label>
+                            </div>
+                            <button type="submit" class="btn btn-success btn-block"> Login</button>
+                        </form>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button class="close-modal">Close</button>
+                    </div>
+
+                </div>
+            </div>
+            <label for="Check" class="label"> <i class="bi bi-card-list"></i></label>
+
+
+
+        </nav>
+    </header>
+    <main>
+        <section class="restaurant-Home" id="restaurant-Home">
+            <div class="left">
+                <div class="leftside">
+                    <h1>Enjoy Your Healthy Delicious Food</h1>
+                    <p>We are team of talented designers making websites with Bootstrap</p>
+                </div>
+                <div> <button href="#bookatable">book a table</button>
+                    <button class="btn">Watch a video</button>
+                </div>
+
+            </div>
+            <div><img width="400px" src="./public/images/hero-img.png" alt=""></div>
+        </section>
+        <section class="restaurant-about" id="restaurant-about">
+            <p>about us</p>
+            <h1>Learn More <span>About Us</span></h1>
+            <div class="globale">
+                <div><img width="550px" src="./public/images/about.jpg" alt="">
+                    <div class="sous-img">
+                        <p>book a table</p>
+                        <span>+1 5589 55488 55</span>
+                    </div>
+                </div>
+                <div class="rightside-icons">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div class="rightside-icon ">
+                        <i class="bi bi-check2-all"></i>
+                        <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    <div class="rightside-icon ">
+                        <i class="bi bi-check2-all"></i>
+                        <p>Ullamco laboris nisi ut aliquip ex ea co mmodo consequat.</p>
+                    </div>
+                    <div class="rightside-icon ">
+                        <i class="bi bi-check2-all"></i>
+                        <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            .</p>
+                    </div>
+                    <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident</p>
+                    <div class="leftside"><video width="400" src="./public/video/1. Présentation détaillée de la formation.mp4"
+                        controls poster="./public/images/about-2.jpg"></video></div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
 
 
 
     <script src="./public/js/app.js"></script>
 </body>
+
 </html>
