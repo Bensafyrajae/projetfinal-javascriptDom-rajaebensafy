@@ -20069,4 +20069,494 @@ textarea.form-control-lg {
   content: "賈";
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #ffffff;
+  color: black;
+  position: fixed;
+  width: 100vw;
+  padding: 5vh 0;
+  z-index: 9999;
+  opacity: 0.9;
+}
+nav .point {
+  color: red;
+  font-size: xx-large;
+}
+nav .menu {
+  display: flex;
+  justify-content: space-between;
+  gap: 3vw;
+}
+nav #Check {
+  display: none;
+}
+nav .label {
+  display: none;
+}
+nav .label .icon {
+  color: black;
+}
+nav .leftside-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+nav button {
+  border-radius: 20px;
+  background-color: red;
+  border: none;
+  color: white;
+  padding: 1vh 3vw;
+}
+nav button:hover {
+  background-color: red;
+}
+nav a {
+  text-decoration: none;
+  color: #8c8c8c;
+}
+nav a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+@media (max-width: 428px) {
+  nav .label {
+    display: flex;
+  }
+  nav .menu {
+    flex-direction: column;
+    align-items: start;
+    padding-left: 50px;
+    padding-top: 50px;
+    background-color: white;
+    width: 99vw;
+    height: 100vh;
+    position: fixed;
+    display: none;
+    z-index: 999;
+    transition: 1s;
+    top: 10%;
+    left: 0;
+    border-radius: 20px;
+  }
+  nav a {
+    color: black;
+  }
+  nav #Check:checked ~ .menu {
+    display: flex;
+  }
+}
+button {
+  padding: 2vh 4vw;
+  border: none;
+  border-radius: 20px;
+  background-color: purple;
+  color: white;
+  cursor: pointer;
+}
+button:hover {
+  background-color: pink;
+}
+
+.backdrop {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.24);
+  position: fixed;
+  z-index: 9999;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  display: none;
+}
+
+.modal {
+  margin-top: 30%;
+  width: 35%;
+  height: 45%;
+  background: white;
+  margin-top: 5vh;
+  border-radius: 15px;
+}
+
+.modal-title {
+  padding: 0 2vw;
+  display: flex;
+  align-items: center;
+  height: 20%;
+  border-bottom: 1px solid black;
+}
+
+.modal-body {
+  height: 60%;
+  /* background-color: blueviolet */
+}
+
+.modal-footer {
+  /* background-color: blueviolet */
+  border-top: 1px solid black;
+  padding-inline: 2vw;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.close-modal {
+  background-color: rgb(194, 6, 6);
+  border-radius: 10px;
+  padding: 0;
+  height: 70%;
+  width: 25%;
+}
+
+.restaurant-Home {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  padding: auto;
+  padding-top: 140px;
+  background-color: #f2f2f2;
+}
+.restaurant-Home img {
+  vertical-align: 50px;
+  animation: mymove 5s infinite;
+}
+@keyframes mymove {
+  50% {
+    vertical-align: 100px;
+  }
+}
+.restaurant-Home h1, .restaurant-Home .h1 {
+  font-family: cursive;
+}
+.restaurant-Home .left {
+  padding-top: 100px;
+  font-size: large;
+}
+.restaurant-Home .leftside {
+  padding-top: 50px;
+  padding: 20px;
+}
+.restaurant-Home button {
+  color: white;
+  background-color: #d33333;
+}
+.restaurant-Home a {
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
+.restaurant-Home a:hover {
+  color: red;
+}
+.restaurant-Home i {
+  color: red;
+}
+.restaurant-Home .liens {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  text-align: center;
+}
+
+.restaurant-about {
+  text-align: center;
+  padding: 20px;
+}
+.restaurant-about h1, .restaurant-about .h1 {
+  font-family: cursive;
+  text-align: center;
+}
+.restaurant-about span {
+  color: red;
+}
+.restaurant-about .globale {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  padding: 10px;
+}
+.restaurant-about .sous-img {
+  border: 2px solid black;
+  padding: 10px;
+  margin-top: 5px;
+  font-size: x-large;
+}
+.restaurant-about .rightside-icons {
+  width: 40%;
+}
+.restaurant-about .rightside-icons .rightside-icon {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+}
+
+.whychooseymmy {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  justify-content: space-evenly;
+  background-color: #f2f2f2;
+  height: 80vh;
+}
+.whychooseymmy #card1 {
+  width: 25vw;
+  height: 70vh;
+  padding: 10px;
+  background-color: #ce1212;
+  color: white;
+}
+.whychooseymmy #card1 button {
+  background-color: #d01d1d;
+}
+.whychooseymmy #card1 button:hover {
+  background-color: white;
+  color: red;
+}
+.whychooseymmy .card {
+  width: 20vw;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  gap: 10px;
+  padding: 10px;
+}
+.whychooseymmy .card i {
+  text-align: center;
+  width: 10%;
+  color: red;
+  background-color: #ebddd8;
+}
+.whychooseymmy .card i:hover {
+  background: red;
+  color: white;
+}
+
+.count {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  background-image: url(../images/stats-bg.jpg);
+  position: relative;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 55vh;
+}
+.count::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.278);
+}
+.count .number {
+  color: white;
+}
+
+.restaurant-menu {
+  text-align: center;
+  padding: 20px;
+}
+.restaurant-menu h1, .restaurant-menu .h1 {
+  font-family: cursive;
+  text-align: center;
+}
+.restaurant-menu span {
+  color: red;
+}
+
+.carousel {
+  background-color: #f2f2f2;
+  height: 50%;
+  text-align: center;
+  padding: 20px;
+}
+.carousel h1, .carousel .h1 {
+  font-family: cursive;
+  text-align: center;
+}
+.carousel span {
+  color: red;
+}
+.carousel .mySlides {
+  display: none;
+}
+.carousel img {
+  vertical-align: middle;
+}
+.carousel .slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.carousel .fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+.carousel .dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.restaurant-chefs {
+  text-align: center;
+  padding: 20px;
+}
+.restaurant-chefs h1, .restaurant-chefs .h1 {
+  font-family: cursive;
+  text-align: center;
+  padding: 20px;
+}
+.restaurant-chefs span {
+  color: red;
+}
+.restaurant-chefs .img {
+  position: relative;
+}
+.restaurant-chefs .img1 {
+  position: absolute;
+  content: "";
+  left: -1px;
+  right: -2.5 px;
+  top: 60px;
+  bottom: -5px;
+  height: 100%;
+  filter: invert(100%);
+  padding: 20px;
+}
+.restaurant-chefs .chefs {
+  z-index: 9999;
+  padding-top: 50px;
+  width: 350px;
+  text-align: center;
+  padding: 10px;
+}
+.restaurant-chefs .chefs1 {
+  box-shadow: rgb(0, 0, 0);
+}
+.restaurant-chefs .chefs1:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 428px) {
+  .restaurant-Home {
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+  .restaurant-Home img {
+    width: 90%;
+  }
+  .globale {
+    flex-direction: column;
+    width: 100%;
+  }
+  .globale img {
+    margin-top: 120px;
+    width: 100%;
+  }
+  .globale .rightside-icons {
+    width: 100%;
+  }
+  .globale .rightside-icons .rightside-icon {
+    width: 100%;
+  }
+  .globale video {
+    width: 90%;
+  }
+  .whychooseymmy {
+    width: 100%;
+    flex-direction: column;
+  }
+  .whychooseymmy #card1 {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .whychooseymmy .card {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+.footer {
+  background-color: #1f1f24;
+  padding: 7vh 0;
+}
+.footer .foot-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+.footer .foot-top h6, .footer .foot-top .h6, .footer .foot-top p {
+  padding-top: 1vh;
+  color: #fff;
+}
+.footer .foot-top .info {
+  display: flex;
+  flex: row;
+  gap: 1vw;
+  justify-content: center;
+}
+.footer .foot-top .info i {
+  color: #ce1212;
+  font-size: xx-large;
+}
+.footer .footer-botum {
+  text-align: center;
+  padding-top: 5vh;
+}
+.footer .footer-botum p {
+  color: white;
+}
+.footer .footer-botum span {
+  color: #ce1212;
+}
+
+.iconSocialMedia {
+  padding-top: 2vh;
+}
+.iconSocialMedia i {
+  border: 1px solid #7595b0;
+  padding: 1vh 1vw;
+  border-radius: 55%;
+  color: #7595b0;
+  font-size: medium;
+}
+.iconSocialMedia i:hover {
+  border-color: #ce1212;
+  color: #ce1212;
+}
+
+.footer-separator {
+  border: none;
+  border-top: 1px solid #fff;
+  margin: 2vh 0;
+  width: 90%;
+  margin: 0 auto;
+}
+
 /*# sourceMappingURL=app.css.map */
