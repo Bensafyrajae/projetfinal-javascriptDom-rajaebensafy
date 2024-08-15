@@ -1,3 +1,4 @@
+
 .restaurant-Home
     // height: 650px
     display: flex
@@ -6,12 +7,16 @@
     padding: auto
     padding-top: 140px
     background-color: #f2f2f2
-    img
-        vertical-align: 50px
-        animation: mymove 5s infinite
-        @keyframes mymove
-            50% 
-                vertical-align: 100px
+    .right-side
+        @keyframes up-down
+            to
+                transform: translateY(-35px) 
+    .animated
+        box-sizing: border-box
+        animation-name: up-down
+        animation-duration: 1s
+        animation-iteration-count: infinite
+        animation-direction: alternate
 
     h1
         font-family: cursive
@@ -34,6 +39,7 @@
             color: red    
     i
         color: red
+        font-size: x-large
     .liens
         display: flex
         justify-content: space-evenly
@@ -93,16 +99,23 @@
         align-content: center
         text-align: center
         gap: 10px
-        padding: 10px
-        i
-            text-align: center
-            width: 10%
-            color: red
-            background-color: #ebddd8 
-            
-            &:hover
+        padding: 30px
+        &:hover
+            i
                 background: red 
                 color: white
+        i
+            text-align: center
+            font-size: xx-large
+            color: red
+            background-color: #ebddd8 
+            border-radius: 40%
+            padding: 10px
+            
+            // &:hover
+            //     background: red 
+            //     color: white
+
 .count
     display: flex
     flex-direction: row
@@ -121,58 +134,303 @@
         width: 100%
         height: 100%
         background: rgba(0, 0, 0, 0.278)
-        
+ 
+
     .number
-        color: white 
-.restaurant-menu 
-    text-align: center
-    padding: 20px
-    h1
-        font-family: cursive
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
         text-align: center
-    span
-        color: red  
-.carousel
-    background-color: #f2f2f2
-    height: 50%
-    text-align: center
-    padding: 20px
+        color: white
+        z-index: 9999
+        
+.restaurant-menu 
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    padding-top: 5vh
+    p
+        color: #0000008f
+        font-weight: bold
+    h2
+        padding-bottom: 6vh
+        span
+        color: #d11212
+    .btnRest
+        display: flex
+        flex-direction: row
+        gap: 3.5vw
+        padding-bottom: 3vh
+        button
+            border: none
+            background-color: #fff
+            font-size: 20px
+            border-bottom: 2px solid #75747488
+            padding-bottom: 1vh
+            &:hover
+                border-bottom-color: #d11212
+    .content-rest
+        text-align: center
+        padding-top: 3vh
+        h3
+        color: #d11212
+        padding-bottom: 4vh
+    .content-plat
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        text-align: center
+        gap: 10vh
+        .plat-row
+            display: flex
+            flex-direction: row
+            justify-content: space-evenly
+            gap: 8vw
+            padding-bottom: 1vh
+        p
+            font-weight: normal
+        span
+            font-weight: bold
+            color: #d11212
+            font-size: x-large
+.anim
+    animation: rajae 0.9s
+    @keyframes rajae
+        0%
+            opacity: 1
+        50%
+            opacity: 0
+        100%
+            opacity: 1
+   
+.carousel-globale
+    display: flex
+    align-items: center
+    justify-content: center
+ 
+.carousel-container 
+    width: 100vw
+    height: 80vh
+    background: #f2f2f2
+    position: relative
+    overflow: hidden
     h1
         font-family: cursive
         text-align: center
     span
         color: red
-   
+    .titre
+        text-align: center 
+.carousel 
+    display: flex
+    transition: transform 0.5s ease
+.slide 
+    min-width: 100%
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: center
+    gap: 4vw
+    .slide-left
+        border-left: 2px solid red
+        padding: 20px
+        display: flex
+        flex-direction: column
+        justify-content: star
+        width: 50%
+    .tiwtiwat
+        color: red
+    .star
+        color: #ffc107
 
-    .mySlides
-        display: none
-    img 
-        vertical-align: middle    
-    .slideshow-container 
-        max-width: 1000px
+.slide img 
+    width: 150px
+    height: 150px
+    border-radius: 50%
+
+
+.next,.previous 
+    display: none
+    padding: 1vh 2vw
+    border-radius: 20px
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+
+
+.next
+    right:0px 
+    display: none
+
+.previous
+    left:0
+    display: none 
+
+
+.indicators-grp
+    width: 100%
+    padding: 2vh 0
+    position: absolute
+    bottom: 10%
+    display: flex
+    align-items: center
+    justify-content: center
+    gap: 10px
+
+.indicator
+    padding: 5px
+    background: rgb(169, 22, 22)
+    border-radius: 50%
+
+.activeIndicator
+    background-color: black
+
+.carousel-globale1
+    .carousel-container 
+        width: 100vw
+        height: 80vh
+        background: #f2f2f2
         position: relative
-        margin: auto
-    .fade 
-        animation-name: fade
-        animation-duration: 1.5s
+        overflow: hidden
+        .slide
+            min-width: 30%
+            gap: 2vw
+            display: flex
+            flex-direction: row
+            align-items: center
+            justify-content: center
+#img1 
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+    align-items: center
+    text-align: center
+    background-image: url(../images/events-1.jpg)
+    position: relative
+    background-size: 100% 100%
+    width: 100%
+    height: 55vh
+    &::before
+        content: ""
+        position: absolute
+        top: 0
+        width: 100%
+        height: 100%
+        background: rgba(0, 0, 0, 0.278)
+#img2 
+    display: flex
+    flex-direction: row
+    justify-content: space-around
+    align-items: center
+    text-align: center
+    background-image: url(../images/events-2.jpg)
+    position: relative
+    background-size: 100% 100%
+    width: 100%
+    height: 55vh
+    &::before
+        content: ""
+        position: absolute
+        top: 0
+        width: 100%
+        height: 100%
+        background: rgba(0, 0, 0, 0.278)
+#img3 
+    display: flex
+    flex-direction: row
+    justify-content: space-around
+    align-items: center
+    text-align: center
+    background-image: url(../images/events-3.jpg)
+    position: relative
+    background-size: 100% 100%
+    width: 100%
+    height: 55vh
+    &::before
+        content: ""
+        position: absolute
+        top: 0
+        width: 100%
+        height: 100%
+        background: rgba(0, 0, 0, 0.278)
+#img4
+    display: flex
+    flex-direction: row
+    justify-content: space-around
+    align-items: center
+    text-align: center
+    background-image: url(../images/events-4.jpg)
+    position: relative
+    background-size: 100% 100%
+    width: 100%
+    height: 55vh
+    &::before
+        content: ""
+        position: absolute
+        top: 0
+        width: 100%
+        height: 100%
+        background: rgba(0, 0, 0, 0.278)
 
-    .dot 
-        height: 15px
-        width: 15px
-        margin: 0 2px
-        background-color: #bbb
-        border-radius: 50%
-        display: inline-block
-        transition: background-color 0.6s ease
-//     @keyframes fade 
-//         from {opacity: .4} 
-//         to {opacity: 1}
+// .slide img 
+//     width: 50%;
+//     height: 100%;
 
+   
+.bookatable
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    text-align: center
+    padding-top: 11vh
+    p
+        text-align: center
+    h2
+        span
+            color: #ce1212
+    .table-row
+        display: flex
+        flex-direction: row
+        padding: 0px
+        margin-top: 4vh
+        .table-left
+            img
+                padding: 0px
+        .table-right
+            background-color: #f8f8f8
+            padding: 1vh 2vw
+            // width:30%
+            .form-group
+                background-color: #f8f8f8
+                padding: 12vh 1vw
+                display: flex
+                flex-direction: column
+                gap: 15px
+                .form-row 
+                    display: flex
+                    flex-direction: row
+                    gap: 20px
+                    textarea
+                        width: 100%
+                        height:30vh
+                        padding: 1vh 1.5vw
+                    input
+                        padding: 1vh 1.5vw
+                        width: 15vw
+            .bookBtn
+                button
+                    border: none
+                    color: #fff
+                    padding: 2vh 5vw
+                    background-color: #ce2929
+                    border-radius: 5px
+                    &:hover
+                        background-color: #ce2929cc       
 
-// /* On smaller screens, decrease text size */
-// @media only screen and (max-width: 300px) {
-//   .text {font-size: 11px}
-// }
 .restaurant-chefs
     text-align: center
     padding: 20px
@@ -182,7 +440,7 @@
         padding: 20px
     span
         color: red 
-    .img
+    .img-globale
         position: relative 
         
 
@@ -190,9 +448,9 @@
     .img1
         position: absolute 
         content: ""
-        left: -1px
-        right: (-2.5)px
-        top: 60px
+        left: -1.5px
+        right: (-2)px
+        top: 50px
         bottom: -5px
         height: 100%
         filter: invert(100%)
@@ -238,5 +496,9 @@
         .card
             width: 100%
             margin-top: 10px
-
+    .count
+        flex-direction: column
+    .chef-res
+        display: flex
+        flex-direction: column
 
