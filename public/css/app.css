@@ -20235,6 +20235,12 @@ nav .contact-btn button:hover {
   background-color: #e23333;
 }
 
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
 .restaurant-Home {
   display: flex;
   justify-content: space-around;
@@ -20412,6 +20418,8 @@ nav .contact-btn button:hover {
 }
 .restaurant-menu h2, .restaurant-menu .h2 {
   padding-bottom: 6vh;
+}
+.restaurant-menu span {
   color: #d11212;
 }
 .restaurant-menu .btnRest {
@@ -20433,6 +20441,8 @@ nav .contact-btn button:hover {
 .restaurant-menu .content-rest {
   text-align: center;
   padding-top: 3vh;
+}
+.restaurant-menu .content-rest h3, .restaurant-menu .content-rest .h3 {
   color: #d11212;
   padding-bottom: 4vh;
 }
@@ -20573,23 +20583,52 @@ nav .contact-btn button:hover {
   background-color: black;
 }
 
-.carousel-globale1 .carousel-container {
-  width: 100vw;
-  height: 80vh;
-  background: #f2f2f2;
-  position: relative;
-  overflow: hidden;
-}
-.carousel-globale1 .carousel-container .slide {
-  min-width: 30%;
-  gap: 2vw;
+.carousel-globale1 .slide-container {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 100%;
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  gap: 1vw;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
-#img1 {
+.image-slideshow {
+  width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+.image-slideshow img {
+  width: 30%;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.indicators {
+  display: flex;
+}
+
+.indicators > div {
+  cursor: pointer;
+  margin: 5px;
+}
+
+.img12 {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -20598,10 +20637,11 @@ nav .contact-btn button:hover {
   background-image: url(../images/events-1.jpg);
   position: relative;
   background-size: 100% 100%;
-  width: 100%;
-  height: 55vh;
+  width: 30%;
+  height: 80vh;
+  color: white;
 }
-#img1::before {
+.img12::before {
   content: "";
   position: absolute;
   top: 0;
@@ -20610,19 +20650,20 @@ nav .contact-btn button:hover {
   background: rgba(0, 0, 0, 0.278);
 }
 
-#img2 {
+.img2 {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
   text-align: center;
   background-image: url(../images/events-2.jpg);
   position: relative;
   background-size: 100% 100%;
-  width: 100%;
-  height: 55vh;
+  width: 30%;
+  height: 80vh;
+  color: white;
 }
-#img2::before {
+.img2::before {
   content: "";
   position: absolute;
   top: 0;
@@ -20631,19 +20672,20 @@ nav .contact-btn button:hover {
   background: rgba(0, 0, 0, 0.278);
 }
 
-#img3 {
+.img3 {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
   text-align: center;
   background-image: url(../images/events-3.jpg);
   position: relative;
   background-size: 100% 100%;
-  width: 100%;
-  height: 55vh;
+  width: 33%;
+  height: 80vh;
+  color: white;
 }
-#img3::before {
+.img3::before {
   content: "";
   position: absolute;
   top: 0;
@@ -20652,19 +20694,20 @@ nav .contact-btn button:hover {
   background: rgba(0, 0, 0, 0.278);
 }
 
-#img4 {
+.img4 {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
   text-align: center;
   background-image: url(../images/events-4.jpg);
   position: relative;
   background-size: 100% 100%;
-  width: 100%;
-  height: 55vh;
+  width: 33%;
+  height: 80vh;
+  color: white;
 }
-#img4::before {
+.img4::before {
   content: "";
   position: absolute;
   top: 0;
@@ -20730,6 +20773,155 @@ nav .contact-btn button:hover {
 }
 .bookatable .table-row .table-right .bookBtn button:hover {
   background-color: rgba(206, 41, 41, 0.8);
+}
+
+.restaurant-gallery {
+  width: 80vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.gallery-container {
+  display: flex;
+  align-items: center;
+  padding: 30vh 0;
+  max-width: 100px;
+  position: relative;
+}
+
+.gallery-item {
+  height: 200px;
+  opacity: 1;
+  position: absolute;
+  transition: all 0.4s ease in-out;
+  width: 300px;
+  border-radius: 10px;
+  background-size: contain;
+}
+
+.gallery-item-1 {
+  left: 15vw;
+  opacity: 0.9;
+  transform: translateX(-50%);
+}
+
+.gallery-item-2, .gallery-item-4 {
+  height: 250px;
+  opacity: 0.9;
+  width: 360px;
+  z-index: 1;
+}
+
+.gallery-item-2 {
+  left: 30vw;
+  transform: translateX(-50%);
+}
+
+.gallery-item-3 {
+  box-shadow: -2px 5px 33px 6px rgba(0, 0, 0, 0.35);
+  height: 300px;
+  opacity: 1;
+  left: 50vw;
+  transform: translateX(-50%);
+  width: 400px;
+  z-index: 2;
+}
+
+.gallery-item-4 {
+  left: 70vw;
+  transform: translateX(-50%);
+}
+
+.gallery-item-5 {
+  left: 85vw;
+  opacity: 0.9;
+  transform: translateX(-50%);
+}
+
+.gallery-controls {
+  display: flex;
+  justify-content: center;
+  margin: 25px 0;
+  height: 100px;
+}
+.gallery-controls button {
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  font-size: 30px;
+  margin: 0 50px;
+  padding: 0 12px;
+  text-transform: capitalize;
+}
+
+.gallery-controls-button:focus {
+  outline: none;
+}
+
+.gallery-controls-previous {
+  position: relative;
+}
+.gallery-controls-previous::before {
+  border: solid #000;
+  border-width: 0 5px 5px 0;
+  content: "";
+  display: inline-block;
+  height: 5px;
+  left: -30vw;
+  padding: 10px;
+  position: absolute;
+  top: 25vw;
+  transform: rotate(135deg) translateY(-50%);
+  transition: left 0.3s ease in-out;
+  width: 5px;
+}
+.gallery-controls-previous:hover::before {
+  left: -40vw;
+}
+
+.gallery-controls-next {
+  position: relative;
+}
+.gallery-controls-next::before {
+  border: solid #000;
+  border-width: 0px 5px 5px 0px;
+  content: "";
+  display: inline-block;
+  height: 5px;
+  right: -30vw;
+  padding: 10px;
+  position: absolute;
+  top: 45vw;
+  transform: rotate(-45deg) translateY(-50%);
+  transition: right 0.3s ease in-out;
+  width: 5px;
+}
+.gallery-controls-next:hover::before {
+  right: -40vw;
+}
+
+.gallery-nav {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  position: absolute;
+  bottom: -30px;
+  width: 100%;
+}
+
+.gallery-nav {
+  background-color: #ccc;
+  border-radius: 50%;
+  height: 10px;
+  margin: 0 5px;
+  width: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.gallery-nav:active {
+  background-color: #555;
 }
 
 .restaurant-chefs {

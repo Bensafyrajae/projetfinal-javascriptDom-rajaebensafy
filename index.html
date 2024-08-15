@@ -231,9 +231,7 @@
                 <p class="titre">TESTIMONIALS</p>
                 <h1>What Are They<span>Saying About Us</span></h1>
                 <div class="carousel">
-
-
-
+                    
                     <div class="slide">
 
                         <div class="slide-left">
@@ -330,60 +328,48 @@
 
                     </div>
                 </div>
-
                 <button carouselBtn="carousel2" class="previous">Previous</button>
                 <button carouselBtn="carousel2" class="next">Next</button>
-
             </div>
         </section>
         <section class="carousel-globale1">
-            <div id="carousel1" autoslide="on" class="carousel-container">
-
-                <div class="carousel">
-
-
-                    <div id="img1" class="slide">
-
+            <div class="slide-container" id="myslideshow" data-ride="carousel">
+        
+                <div class="image-slideshow" id="myslideshow" data-ride="carousel">
+                    
+                    <div class="image fade img12">
                         <p>custom partties</p>
                         <h2>$289</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga tenetur incidunt quia
                             architecto aperiam temporibus maiores exercitationem. Aut minima accusantium, tempore
                             inventore dolorum, facere quisquam, ducimus natus quidem odio doloribus.</p>
-
-                    </div>
-                    <div id="img2" class="slide">
-
+                    </div>        
+                    <div class="image fade img2">
+                        <p>custom partties</p>
+                        <h2>$289</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga tenetur incidunt quia
+                            architecto aperiam temporibus maiores exercitationem. Aut minima accusantium, tempore
+                            inventore dolorum, facere quisquam, ducimus natus quidem odio doloribus.</p>
+                    </div>        
+                    <div class="image fade img3">
                         <p>custom partties</p>
                         <h2>$289</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga tenetur incidunt quia
                             architecto aperiam temporibus maiores exercitationem. Aut minima accusantium, tempore
                             inventore dolorum, facere quisquam, ducimus natus quidem odio doloribus.</p>
                     </div>
+                          
+                    <div class="image fade img4">
+                        <p>custom partties</p>
+                        <h2>$289</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga tenetur incidunt quia
+                            architecto aperiam temporibus maiores exercitationem. Aut minima accusantium, tempore
+                            inventore dolorum, facere quisquam, ducimus natus quidem odio doloribus.</p>
+                    </div>        
+                   
+                    <div class="indicators" id="indicators"></div>
                 </div>
-
-                <div id="img3" class="slide">
-
-                    <p>custom partties</p>
-                    <h2>$289</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga tenetur incidunt quia architecto
-                        aperiam temporibus maiores exercitationem. Aut minima accusantium, tempore inventore dolorum,
-                        facere quisquam, ducimus natus quidem odio doloribus.</p>
-
-                </div>
-                <div id="img4" class="slide">
-
-                    <p>custom partties</p>
-                    <h2>$289</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga tenetur incidunt quia architecto
-                        aperiam temporibus maiores exercitationem. Aut minima accusantium, tempore inventore dolorum,
-                        facere quisquam, ducimus natus quidem odio doloribus.</p>
-
-                </div>
-            </div>
-
-            <button carouselBtn="carousel2" class="previous">Previous</button>
-            <button carouselBtn="carousel2" class="next">Next</button>
-
+   
             </div>
         </section>
         <section id="restaurant-chefs" class="restaurant-chefs">
@@ -441,7 +427,7 @@
             <div>
 
         </section>
-        <section class="bookatable">
+        <section class="bookatable" id="bookatable">
 
             <div>
                 <p>BOOK A TABLE</p>
@@ -474,6 +460,23 @@
                 </div>
 
 
+        </section>
+        <section class="restaurant-gallery" id="restaurant-gallery">
+            
+                <div class="gallery-container">
+                    <img class="gallery-item gallery-item-1" src="./public/images/gallery/gallery-1.jpg" alt="" data-index="1" width="20px">
+                    <img class="gallery-item gallery-item-2" src="./public/images/gallery/gallery-2.jpg" alt="" data-index="2" width="20px">
+                    <img class="gallery-item gallery-item-3" src="./public/images/gallery/gallery-3.jpg" alt="" data-index="3" width="20px">
+                    <img class="gallery-item gallery-item-4" src="./public/images/gallery/gallery-4.jpg" alt="" data-index="4" width="20px">
+                    <img class="gallery-item gallery-item-5" src="./public/images/gallery/gallery-5.jpg" alt="" data-index="5" width="20px">
+                    <img class="gallery-item gallery-item-6" src="./public/images/gallery/gallery-6.jpg" alt="" data-index="6">
+                    <img class="gallery-item gallery-item-7" src="./public/images/gallery/gallery-7.jpg" alt="" data-index="7">
+                    <img class="gallery-item gallery-item-8" src="./public/images/gallery/gallery-8.jpg" alt="" data-index="8">
+                </div>
+                <div class="gallery-controls"></div>
+                <ul class="gallery-nav"></ul>
+        
+            
         </section>
         <section id="restaurant-contact" class="restaurant-contact">
             <div class="contact pt-5 d-flex flex-column justify-content-center bg-colorBG">
@@ -569,11 +572,6 @@
                     </form>
                 </div>
         </section>
-
-
-
-
-
 
 
     </main>
