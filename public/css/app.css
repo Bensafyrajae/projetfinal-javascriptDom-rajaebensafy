@@ -20809,7 +20809,7 @@ body {
   transition: left 0.3s ease in-out;
   width: 5px;
 }
-.restaurant-gallery .gallery-controls-previous:hover::before {
+.restaurant-gallery .gallery-controls-previous::before:hover::before {
   left: -40vw;
 }
 .restaurant-gallery .gallery-controls-next {
@@ -20829,7 +20829,7 @@ body {
   transition: right 0.3s ease in-out;
   width: 5px;
 }
-.restaurant-gallery .gallery-controls-next:hover::before {
+.restaurant-gallery .gallery-controls-next::before:hover::before {
   right: -40vw;
 }
 .restaurant-gallery .gallery-nav {
@@ -20838,7 +20838,6 @@ body {
   list-style: none;
   padding: 0;
   position: absolute;
-  bottom: -30px;
   width: 100%;
 }
 .restaurant-gallery .gallery-nav li {

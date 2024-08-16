@@ -490,8 +490,8 @@ body
             transform: rotate(135deg) translateY(-50%)
             transition: left 0.30s ease in-out
             width: 5px
-        &:hover::before
-            left: -40vw
+            &:hover::before
+                left: -40vw
     .gallery-controls-next
         position: relative
         &::before
@@ -507,15 +507,15 @@ body
             transform: rotate(-45deg) translateY(-50%)
             transition: right 0.30s ease in-out
             width: 5px
-        &:hover::before
-            right: -40vw
+            &:hover::before
+                right: -40vw
     .gallery-nav
         display: flex
         justify-content: center
         list-style: none
         padding: 0
         position: absolute
-        bottom: -30px 
+        // bottom: -30px 
         width: 100%
     .gallery-nav
         li
@@ -563,6 +563,7 @@ body
         box-shadow: rgb(0,0 ,0.2 ) 
         &:hover
             transform: scale(1.1)
+            
 .fixed
     display: flex
     justify-content: center
