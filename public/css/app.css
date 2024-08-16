@@ -20069,6 +20069,14 @@ textarea.form-control-lg {
   content: "賈";
 }
 
+@font-face {
+  font-family: font;
+  src: url(../../public/font/AmaticSC-Bold.ttf);
+}
+@font-face {
+  font-family: "Amatic SC";
+  src: url(../font/Amatic_SC/AmaticSC-Regular.ttf);
+}
 * {
   margin: 0;
   padding: 0;
@@ -20264,7 +20272,8 @@ body {
   animation-direction: alternate;
 }
 .restaurant-Home h1, .restaurant-Home .h1 {
-  font-family: cursive;
+  font-family: "Amatic SC";
+  font-size: xx-large;
 }
 .restaurant-Home .left {
   padding-top: 100px;
@@ -20312,7 +20321,8 @@ body {
   padding: 20px;
 }
 .restaurant-about h1, .restaurant-about .h1 {
-  font-family: cursive;
+  font-family: "Amatic SC";
+  font-size: xx-large;
   text-align: center;
 }
 .restaurant-about span {
@@ -20468,6 +20478,8 @@ body {
 }
 .restaurant-menu h2, .restaurant-menu .h2 {
   padding-bottom: 6vh;
+  font-family: "Amatic SC";
+  font-size: xx-large;
 }
 .restaurant-menu span {
   color: #d11212;
@@ -20547,7 +20559,8 @@ body {
   overflow: hidden;
 }
 .carousel-globale .carousel-container h1, .carousel-globale .carousel-container .h1 {
-  font-family: cursive;
+  font-family: "Amatic SC";
+  font-size: xx-large;
   text-align: center;
 }
 .carousel-globale .carousel-container span {
@@ -20622,145 +20635,6 @@ body {
   background-color: black;
 }
 
-.carousel-globale1 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.carousel-globale1 #carousel1 {
-  position: relative;
-  width: 100vw;
-  background: #f2f2f2;
-  overflow: hidden;
-}
-.carousel-globale1 .group {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-}
-.carousel-globale1 .carousel {
-  display: flex;
-  transition: transform 0.5s ease;
-}
-.carousel-globale1 .next, .carousel-globale1 .previous {
-  display: none;
-  padding: 1vh 2vw;
-  border-radius: 20px;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
-.carousel-globale1 .next {
-  right: 0px;
-  display: none;
-}
-.carousel-globale1 .previous {
-  left: 0;
-  display: none;
-}
-.carousel-globale1 .indicators-grp {
-  width: 100%;
-  padding: 2vh 0;
-  position: absolute;
-  bottom: 10%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-}
-.carousel-globale1 .indicator {
-  padding: 5px;
-  background: rgb(169, 22, 22);
-  border-radius: 50%;
-}
-.carousel-globale1 .activeIndicator {
-  background-color: black;
-}
-.carousel-globale1 .img12 {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  text-align: center;
-  background-image: url(../images/events-1.jpg);
-  position: relative;
-  background-size: 100% 100%;
-  width: 50%;
-  padding: 30px;
-  color: white;
-}
-.carousel-globale1 .img12::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.278);
-}
-.carousel-globale1 .img2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  text-align: center;
-  background-image: url(../images/events-2.jpg);
-  position: relative;
-  background-size: 100% 100%;
-  width: 50%;
-  padding: 30px;
-  color: white;
-}
-.carousel-globale1 .img2::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.278);
-}
-.carousel-globale1 .img3 {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  text-align: center;
-  background-image: url(../images/events-3.jpg);
-  position: relative;
-  background-size: 100% 100%;
-  width: 50%;
-  padding: 30px;
-  color: white;
-}
-.carousel-globale1 .img3::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.278);
-}
-.carousel-globale1 .img4 {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  text-align: center;
-  background-image: url(../images/events-4.jpg);
-  position: relative;
-  background-size: 100% 100%;
-  width: 50%;
-  padding: 30px;
-  color: white;
-}
-.carousel-globale1 .img4::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.278);
-}
-
 .bookatable {
   display: flex;
   flex-direction: column;
@@ -20771,6 +20645,10 @@ body {
 }
 .bookatable p {
   text-align: center;
+}
+.bookatable h1, .bookatable .h1 {
+  font-family: "Amatic SC";
+  font-size: xx-large;
 }
 .bookatable h1 span, .bookatable .h1 span {
   color: #ce1212;
@@ -20831,7 +20709,8 @@ body {
   padding-top: 5vh;
 }
 .restaurant-gallery .gallerry-title h1, .restaurant-gallery .gallerry-title .h1 {
-  font-family: cursive;
+  font-family: "Amatic SC";
+  font-size: xx-large;
   text-align: center;
 }
 .restaurant-gallery .gallerry-title span {
@@ -20962,7 +20841,7 @@ body {
   bottom: -30px;
   width: 100%;
 }
-.restaurant-gallery .gallery-nav {
+.restaurant-gallery .gallery-nav li {
   background-color: #ccc;
   border-radius: 50%;
   height: 10px;
@@ -20980,7 +20859,8 @@ body {
   padding: 20px;
 }
 .restaurant-chefs h1, .restaurant-chefs .h1 {
-  font-family: cursive;
+  font-family: "Amatic SC";
+  font-size: xx-large;
   text-align: center;
   padding: 20px;
 }
@@ -21030,6 +20910,11 @@ body {
 }
 .fixed i {
   color: white;
+}
+
+.restaurant-contact .font {
+  font-family: "Amatic SC";
+  font-size: xx-large;
 }
 
 @media (max-width: 428px) {

@@ -157,7 +157,7 @@ containers.forEach(container => {
         setInterval(() => {
            
             nextBtn.click()
-        }, 4000);
+        }, 3000);
     }
 });
 
@@ -228,7 +228,7 @@ class Carousel1 {
     }
 
     setIndicators() {
-      // Vider les indicateurs précédents si nécessaire
+     
       while (this.carouselNav.firstChild) {
           this.carouselNav.removeChild(this.carouselNav.firstChild);
       }
@@ -237,12 +237,12 @@ class Carousel1 {
           let li = document.createElement('li');
           li.addEventListener('click', () => {
               this.setCurrentState(index);
-              this.stopAutoSlide(); // Stop auto slide when an indicator is clicked
+              this.stopAutoSlide(); 
           });
           this.carouselNav.appendChild(li);
       });
   
-      // Initialiser l'état des indicateurs
+   
       this.updateIndicators();
   }
   
@@ -251,7 +251,7 @@ class Carousel1 {
         this.autoSlideInterval = setInterval(() => {
             this.currentItemIndex = (this.currentItemIndex + 1) % this.carouselArray.length;
             this.setCurrentState(this.currentItemIndex);
-        }, 2000); // Change slide every 3 seconds
+        }, 2000); 
     }
 
     stopAutoSlide() {
@@ -263,7 +263,7 @@ class Carousel1 {
         this.setIndicators();
         this.startAutoSlide();
         
-        // Optional: stop auto slide on mouse over and restart on mouse out
+
         this.carouselContainer.addEventListener('mouseover', () => this.stopAutoSlide());
         this.carouselContainer.addEventListener('mouseout', () => this.startAutoSlide());
     }
