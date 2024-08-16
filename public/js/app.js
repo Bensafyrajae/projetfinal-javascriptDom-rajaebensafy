@@ -1,3 +1,19 @@
+//*navbar
+let body = document.querySelector("body")
+let dispalyMenu = document.querySelector(".display-menu")
+let navMenu = document.querySelector(".menu")
+let closeMenu = document.querySelector(".close")
+
+
+dispalyMenu.addEventListener("click", ()=>{
+  navMenu.style.display="flex"
+  body.style.backgroundColor = " #000000bc"
+
+})
+closeMenu.addEventListener("click", ()=>{
+   navMenu.style.display="none"
+   body.style.backgroundColor = "#fff"
+})
 
 
 //*Modal
@@ -17,7 +33,12 @@ window.onclick = function(event) {
     }
 }
 
-
+//*
+document.addEventListener('DOMContentLoaded', function() {
+    const addVideo = GLightbox({
+      selector: '.addVideo'
+    });
+});
 
 //*restaurant-Menu
 
@@ -136,7 +157,7 @@ containers.forEach(container => {
         setInterval(() => {
            
             nextBtn.click()
-        }, 3000);
+        }, 4000);
     }
 });
 
@@ -156,45 +177,7 @@ containers.forEach(container => {
     });
     indicatorsGrp.querySelector(".indicator").classList.add('activeIndicator')
 });
-//*carousel2
-let index = 0;
-let images = document.getElementsByClassName("image");
 
-function createIndicators() {
-    const indicatorWrapper = document.querySelector('#indicators');
-    for (i = 0; i < images.length; i++) {
-        const dot = document.createElement('div');
-        dot.style.width = "10px";
-        dot.style.height = "10px";
-        dot.style.backgroundColor = "black";
-        dot.dataset.imageIndex = i;
-
-        dot.addEventListener('click', function (e) {
-            const index = e.target.dataset.imageIndex;
-            for (let i = 0; i < images.length; i++) {
-                images[i].style.display = "none";
-            }
-            images[index].style.display = "block";
-        })
-
-        indicatorWrapper.append(dot)
-    }
-}
-
-function displayImages() {
-    for (let i = 0; i < images.length; i++) {
-        images[i].style.display = "none";
-    }
-    index++;
-    if (index > images.length) {
-        index = 1;
-    }
-    images[index - 1].style.display = "block";
-    setTimeout(displayImages, 4000);
-}
-
-displayImages();
-createIndicators();
 //*carousel3
 let galleryContainer = document.querySelector(".gallery-container");
 let galleryNavContainer = document.querySelector(".gallery-nav");
