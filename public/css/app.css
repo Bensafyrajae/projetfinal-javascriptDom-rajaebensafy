@@ -20104,14 +20104,8 @@ nav .menu {
   justify-content: space-between;
   gap: 3vw;
 }
-nav #Check {
+nav .display-menu {
   display: none;
-}
-nav .label {
-  display: none;
-}
-nav .label .icon {
-  color: black;
 }
 nav .leftside-menu {
   display: flex;
@@ -20144,7 +20138,7 @@ nav .contact-btn button:hover {
 }
 
 @media (max-width: 428px) {
-  nav .label {
+  nav .display-menu {
     display: flex;
   }
   nav .menu {
@@ -20165,9 +20159,6 @@ nav .contact-btn button:hover {
   }
   nav a {
     color: black;
-  }
-  nav #Check:checked ~ .menu {
-    display: flex;
   }
 }
 .modal {
@@ -20490,31 +20481,28 @@ body {
   align-items: center;
   justify-content: center;
 }
-
-.carousel-container {
+.carousel-globale .carousel-container {
   width: 100vw;
   height: 80vh;
   background: #f2f2f2;
   position: relative;
   overflow: hidden;
 }
-.carousel-container h1, .carousel-container .h1 {
+.carousel-globale .carousel-container h1, .carousel-globale .carousel-container .h1 {
   font-family: cursive;
   text-align: center;
 }
-.carousel-container span {
+.carousel-globale .carousel-container span {
   color: red;
 }
-.carousel-container .titre {
+.carousel-globale .carousel-container .titre {
   text-align: center;
 }
-
-.carousel {
+.carousel-globale .carousel {
   display: flex;
   transition: transform 0.5s ease;
 }
-
-.slide {
+.carousel-globale .slide {
   min-width: 100%;
   display: flex;
   flex-direction: row;
@@ -20522,7 +20510,7 @@ body {
   justify-content: center;
   gap: 4vw;
 }
-.slide .slide-left {
+.carousel-globale .slide .slide-left {
   border-left: 2px solid red;
   padding: 20px;
   display: flex;
@@ -20530,20 +20518,18 @@ body {
   justify-content: star;
   width: 50%;
 }
-.slide .tiwtiwat {
+.carousel-globale .slide .tiwtiwat {
   color: red;
 }
-.slide .star {
+.carousel-globale .slide .star {
   color: #ffc107;
 }
-
-.slide img {
+.carousel-globale .slide img {
   width: 150px;
   height: 150px;
   border-radius: 50%;
 }
-
-.next, .previous {
+.carousel-globale .next, .carousel-globale .previous {
   display: none;
   padding: 1vh 2vw;
   border-radius: 20px;
@@ -20551,18 +20537,15 @@ body {
   top: 50%;
   transform: translateY(-50%);
 }
-
-.next {
+.carousel-globale .next {
   right: 0px;
   display: none;
 }
-
-.previous {
+.carousel-globale .previous {
   left: 0;
   display: none;
 }
-
-.indicators-grp {
+.carousel-globale .indicators-grp {
   width: 100%;
   padding: 2vh 0;
   position: absolute;
@@ -20572,148 +20555,13 @@ body {
   justify-content: center;
   gap: 10px;
 }
-
-.indicator {
+.carousel-globale .indicator {
   padding: 5px;
   background: rgb(169, 22, 22);
   border-radius: 50%;
 }
-
-.activeIndicator {
+.carousel-globale .activeIndicator {
   background-color: black;
-}
-
-.carousel-globale1 .slide-container {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  gap: 1vw;
-  overflow: hidden;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
-.image-slideshow {
-  width: 100%;
-  position: relative;
-  margin: auto;
-}
-
-.image-slideshow img {
-  width: 30%;
-}
-
-.fade {
-  animation-name: fade;
-  animation-duration: 5s;
-}
-
-@keyframes fade {
-  from {
-    opacity: 0.5;
-  }
-  to {
-    opacity: 1;
-  }
-}
-.indicators {
-  display: flex;
-}
-
-.indicators > div {
-  cursor: pointer;
-  margin: 5px;
-}
-
-.img12 {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  text-align: center;
-  background-image: url(../images/events-1.jpg);
-  position: relative;
-  background-size: 100% 100%;
-  width: 30%;
-  height: 80vh;
-  color: white;
-}
-.img12::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.278);
-}
-
-.img2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  text-align: center;
-  background-image: url(../images/events-2.jpg);
-  position: relative;
-  background-size: 100% 100%;
-  width: 30%;
-  height: 80vh;
-  color: white;
-}
-.img2::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.278);
-}
-
-.img3 {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  text-align: center;
-  background-image: url(../images/events-3.jpg);
-  position: relative;
-  background-size: 100% 100%;
-  width: 33%;
-  height: 80vh;
-  color: white;
-}
-.img3::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.278);
-}
-
-.img4 {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  text-align: center;
-  background-image: url(../images/events-4.jpg);
-  position: relative;
-  background-size: 100% 100%;
-  width: 33%;
-  height: 80vh;
-  color: white;
-}
-.img4::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.278);
 }
 
 .bookatable {
@@ -20911,7 +20759,7 @@ body {
   width: 100%;
 }
 
-.gallery-nav {
+.gallery-nav li {
   background-color: #ccc;
   border-radius: 50%;
   height: 10px;
@@ -20920,7 +20768,7 @@ body {
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-.gallery-nav:active {
+.gallery-nav li:active {
   background-color: #555;
 }
 
@@ -20962,6 +20810,23 @@ body {
 }
 .restaurant-chefs .chefs1:hover {
   transform: scale(1.1);
+}
+
+.fixed {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  background-color: red;
+  height: 50px;
+  position: fixed;
+  bottom: 0px;
+  right: 0;
+  z-index: 99999999;
+  border-radius: 50%;
+}
+.fixed i {
+  color: white;
 }
 
 @media (max-width: 428px) {
@@ -21007,6 +20872,12 @@ body {
   .chef-res {
     display: flex;
     flex-direction: column;
+  }
+  .restaurant-menu .content-plat {
+    flex-direction: column;
+  }
+  .restaurant-menu .plat-row {
+    flex-direction: column !important;
   }
 }
 .footer {

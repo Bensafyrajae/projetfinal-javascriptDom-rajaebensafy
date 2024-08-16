@@ -17,7 +17,7 @@
                 <h1>Yummy</h1>
                 <div class="point">.</div>
             </div>
-            <input id="Check" type="checkbox" class="Check">
+            <!-- <input id="Check" type="checkbox" class="Check"> -->
             <div class="menu">
                 <a href="#restaurant-Home">Home</a>
                 <a href="#restaurant-about">About </a>
@@ -31,22 +31,31 @@
             </div>
 
             <div class="contact-btn">
-                <button id="loginBtn">Login</button>
+                <button id="loginbutton">Login</button>
             </div>
-            <div id="loginModal" class="modal">
+            <div id="Modal" class="modal">
                 <div class="modal-content">
-                    <span class="close">&times;</span>
+                    <div class="close">&times;</div>
                     <h2>Login</h2>
                     <form>
-                        <label for="username">Username</label>
-                        <input type="text" id="username" name="username">
-                        <label for="password">Password</label>
-                        <input type="password" id="password" name="password">
+                        <label for="usrname"> Username</label>
+                        <input type="text" class="form-control" id="usrname" placeholder="Enter email">
+                      
+                      
+                        <label for="psw">Password</label>
+                        <input type="text" class="form-control" id="psw" placeholder="Enter password">
+                      
+                        <label><input type="checkbox" value="" checked>Remember me</label>
+                     
                         <button type="submit">Login</button>
                     </form>
                 </div>
             </div>
-            <label for="Check" class="label"> <i class="bi bi-card-list"></i></label>
+            <div class="display-menu">
+                <i class="bi bi-card-list"></i>
+            
+            </div>
+            <!-- <label for="Check" class="label"> <i class="bi bi-card-list"></i></label> -->
 
 
 
@@ -333,9 +342,9 @@
             </div>
         </section>
         <section class="carousel-globale1">
-            <div class="slide-container" id="myslideshow" data-ride="carousel">
+            <div class="container-slide" id="myslideshow" data-ride="carousel">
         
-                <div class="image-slideshow" id="myslideshow" data-ride="carousel">
+                <div class="carousel-images" id="myslideshow" data-ride="carousel">
                     
                     <div class="image fade img12">
                         <p>custom partties</p>
@@ -573,9 +582,10 @@
                 </div>
         </section>
 
-
+        <div class="fixed"><a href="./index.html"><i class="bi bi-arrow-up"></i> </a></div>
     </main>
     <footer>
+        
         <div class="footer mt-4">
             <div class="foot-top">
                 <div class="info">

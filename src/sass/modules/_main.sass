@@ -214,222 +214,195 @@ body
     align-items: center
     justify-content: center
  
-.carousel-container 
-    width: 100vw
-    height: 80vh
-    background: #f2f2f2
-    position: relative
-    overflow: hidden
-    h1
-        font-family: cursive
-        text-align: center
-    span
-        color: red
-    .titre
-        text-align: center 
-.carousel 
-    display: flex
-    transition: transform 0.5s ease
-.slide 
-    min-width: 100%
-    display: flex
-    flex-direction: row
-    align-items: center
-    justify-content: center
-    gap: 4vw
-    .slide-left
-        border-left: 2px solid red
-        padding: 20px
+    .carousel-container 
+        width: 100vw
+        height: 80vh
+        background: #f2f2f2
+        position: relative
+        overflow: hidden
+        h1
+            font-family: cursive
+            text-align: center
+        span
+            color: red
+        .titre
+            text-align: center 
+    .carousel 
         display: flex
-        flex-direction: column
-        justify-content: star
-        width: 50%
-    .tiwtiwat
-        color: red
-    .star
-        color: #ffc107
+        transition: transform 0.5s ease
+    .slide 
+        min-width: 100%
+        display: flex
+        flex-direction: row
+        align-items: center
+        justify-content: center
+        gap: 4vw
+        .slide-left
+            border-left: 2px solid red
+            padding: 20px
+            display: flex
+            flex-direction: column
+            justify-content: star
+            width: 50%
+        .tiwtiwat
+            color: red
+        .star
+            color: #ffc107
 
-.slide img 
-    width: 150px
-    height: 150px
-    border-radius: 50%
-
-
-.next,.previous 
-    display: none
-    padding: 1vh 2vw
-    border-radius: 20px
-    position: absolute
-    top: 50%
-    transform: translateY(-50%)
-
-
-.next
-    right:0px 
-    display: none
-
-.previous
-    left:0
-    display: none 
+    .slide img 
+        width: 150px
+        height: 150px
+        border-radius: 50%
 
 
-.indicators-grp
-    width: 100%
-    padding: 2vh 0
-    position: absolute
-    bottom: 10%
-    display: flex
-    align-items: center
-    justify-content: center
-    gap: 10px
-
-.indicator
-    padding: 5px
-    background: rgb(169, 22, 22)
-    border-radius: 50%
-
-.activeIndicator
-    background-color: black
-
-.carousel-globale1
-   .slide-container 
-    margin-top: 30px
-    margin-bottom: 30px
-    width: 100%
-    display: flex
-    flex-direction: row
-    // justify-content: center
-    // align-items: center
-    gap: 1vw
-    overflow: hidden
-    display: flex
-    flex-wrap: wrap
-    justify-content: space-around
+    .next,.previous 
+        display: none
+        padding: 1vh 2vw
+        border-radius: 20px
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
 
 
-.image-slideshow 
-    width: 100%
-    position: relative
-    margin: auto
-    // display: flex
-    // flex-direction: row
-    // flex-wrap: wrap
-    // justify-content: space-around
+    .next
+        right:0px 
+        display: none
 
-    
-    
-    
+    .previous
+        left:0
+        display: none 
 
 
-.image-slideshow img 
-    width: 30%
+    .indicators-grp
+        width: 100%
+        padding: 2vh 0
+        position: absolute
+        bottom: 10%
+        display: flex
+        align-items: center
+        justify-content: center
+        gap: 10px
+
+    .indicator
+        padding: 5px
+        background: rgb(169, 22, 22)
+        border-radius: 50%
+
+    .activeIndicator
+        background-color: black
 
 
-.fade 
-    animation-name: fade
-    animation-duration: 5s
+// .container-slide
+//     position: relative
+//     display: flex
+//     flex-direction: column
 
 
-@keyframes fade 
-    from 
-        opacity: .5
-    
-
-    to 
-        opacity: 1
-    
+// .carousel-images 
+//     display: flex
+//     overflow: hidden
 
 
+// .carousel-images img 
+//     width: 100%
+//     display: none
 
-.indicators 
-    display: flex
+
+// .indicators 
+//     display: flex
+//     justify-content: center
 
 
-.indicators>div 
-    cursor: pointer
-    margin: 5px
+// .indicator 
+//     width: 10px
+//     height: 10px
+//     background-color: gray
+//     margin: 0 5px
+//     border-radius: 50%
+
+
+// .active 
+//     background-color: black
+
 
        
-.img12 
-    display: flex
-    flex-direction: column
-    justify-content: space-around
-    align-items: center
-    text-align: center
-    background-image: url(../images/events-1.jpg)
-    position: relative
-    background-size: 100% 100%
-    width: 30%
-    height: 80vh
-    color: white
-    &::before
-        content: ""
-        position: absolute
-        top: 0
-        width: 100%
-        height: 100%
-        background: rgba(0, 0, 0, 0.278)
-.img2 
-    display: flex
-    flex-direction: column
-    justify-content: space-around
-    align-items: center
-    text-align: center
-    background-image: url(../images/events-2.jpg)
-    position: relative
-    background-size: 100% 100%
-    width: 30%
-    height: 80vh
-    color: white
-    &::before
-        content: ""
-        position: absolute
-        top: 0
-        width: 100%
-        height: 100%
-        background: rgba(0, 0, 0, 0.278)
-.img3 
-    display: flex
-    flex-direction: column
-    justify-content: space-around
-    align-items: center
-    text-align: center
-    background-image: url(../images/events-3.jpg)
-    position: relative
-    background-size: 100% 100%
-    width: 33%
-    height: 80vh
-    color: white
-    &::before
-        content: ""
-        position: absolute
-        top: 0
-        width: 100%
-        height: 100%
-        background: rgba(0, 0, 0, 0.278)
-.img4
-    display: flex
-    flex-direction: column
-    justify-content: space-around
-    align-items: center
-    text-align: center
-    background-image: url(../images/events-4.jpg)
-    position: relative
-    background-size: 100% 100%
-    width: 33%
-    height: 80vh
-    color: white
-    &::before
-        content: ""
-        position: absolute
-        top: 0
-        width: 100%
-        height: 100%
-        background: rgba(0, 0, 0, 0.278)
+// .img12 
+//     display: flex
+//     flex-direction: column
+//     justify-content: space-around
+//     align-items: center
+//     text-align: center
+//     background-image: url(../images/events-1.jpg)
+//     position: relative
+//     background-size: 100% 100%
+//     width: 40%
+//     height: 80vh
+//     color: white
+//     &::before
+//         content: ""
+//         position: absolute
+//         top: 0
+//         width: 100%
+//         height: 100%
+//         background: rgba(0, 0, 0, 0.278)
+// .img2 
+//     display: flex
+//     flex-direction: column
+//     justify-content: space-around
+//     align-items: center
+//     text-align: center
+//     background-image: url(../images/events-2.jpg)
+//     position: relative
+//     background-size: 100% 100%
+//     width: 40%
+//     height: 80vh
+//     color: white
+//     &::before
+//         content: ""
+//         position: absolute
+//         top: 0
+//         width: 100%
+//         height: 100%
+//         background: rgba(0, 0, 0, 0.278)
+// .img3 
+//     display: flex
+//     flex-direction: column
+//     justify-content: space-around
+//     align-items: center
+//     text-align: center
+//     background-image: url(../images/events-3.jpg)
+//     position: relative
+//     background-size: 100% 100%
+//     width: 40%
+//     height: 80vh
+//     color: white
+//     &::before
+//         content: ""
+//         position: absolute
+//         top: 0
+//         width: 100%
+//         height: 100%
+//         background: rgba(0, 0, 0, 0.278)
+// .img4
+//     display: flex
+//     flex-direction: column
+//     justify-content: space-around
+//     align-items: center
+//     text-align: center
+//     background-image: url(../images/events-4.jpg)
+//     position: relative
+//     background-size: 100% 100%
+//     width: 40%
+//     height: 80vh
+//     color: white
+//     &::before
+//         content: ""
+//         position: absolute
+//         top: 0
+//         width: 100%
+//         height: 100%
+//         background: rgba(0, 0, 0, 0.278)
 
-// .slide img 
-//     width: 50%;
-//     height: 100%;
 
    
 .bookatable
@@ -589,15 +562,15 @@ body
     width: 100%
 .gallery-nav
     li
-    background-color: #ccc
-    border-radius: 50%
-    height: 10px
-    margin: 0 5px
-    width: 10px
-    cursor: pointer
-    transition: background-color 0.3s ease
-    &:active
-        background-color: #555                             
+        background-color: #ccc
+        border-radius: 50%
+        height: 10px
+        margin: 0 5px
+        width: 10px
+        cursor: pointer
+        transition: background-color 0.3s ease
+        &:active
+            background-color: #555                             
 
 .restaurant-chefs
     text-align: center
@@ -633,7 +606,21 @@ body
         box-shadow: rgb(0,0 ,0.2 ) 
         &:hover
             transform: scale(1.1)
-             
+.fixed
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 50px
+    background-color: red
+    height: 50px
+    position: fixed
+    bottom: 0px
+    right: 0
+    z-index: 99999999
+    border-radius: 50%
+    
+    i
+        color: white             
 
 @media (max-width :428px)
     .restaurant-Home
@@ -669,4 +656,9 @@ body
     .chef-res
         display: flex
         flex-direction: column
+    .restaurant-menu
+        .content-plat
+            flex-direction: column
+        .plat-row
+            flex-direction: column !important
 

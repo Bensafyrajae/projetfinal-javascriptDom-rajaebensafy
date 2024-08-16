@@ -1,11 +1,14 @@
-let modal = document.getElementById("loginModal");
-let btn = document.getElementById("loginBtn");
-let span = document.getElementsByClassName("close")[0];
-btn.onclick = function() {
+
+
+//*Modal
+let modal = document.getElementById("Modal");
+let button = document.getElementById("loginbutton");
+let div = document.getElementsByClassName("close")[0];
+button.onclick = function() {
     modal.style.display = "block";
 }
 
-span.onclick = function() {
+div.onclick = function() {
     modal.style.display = "none";
 }
 window.onclick = function(event) {
@@ -16,7 +19,7 @@ window.onclick = function(event) {
 
 
 
-//*Menu
+//*restaurant-Menu
 let btnrest = document.querySelector(".btnRest")
 let starBtn =document.querySelector(".starBtn")
 let brakBtn =document.querySelector(".brakBtn")
