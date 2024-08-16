@@ -2,7 +2,7 @@
 let body = document.querySelector("body")
 let dispalyMenu = document.querySelector(".display-menu")
 let navMenu = document.querySelector(".menu")
-let closeMenu = document.querySelector(".close")
+let closeMenu = document.querySelector(".close-menu")
 
 
 dispalyMenu.addEventListener("click", ()=>{
@@ -19,7 +19,7 @@ closeMenu.addEventListener("click", ()=>{
 //*Modal
 let modal = document.getElementById("Modal");
 let button = document.getElementById("loginbutton");
-let div = document.getElementsByClassName("close")[0];
+let div = document.getElementsByClassName("close1")[0];
 button.onclick = function() {
     modal.style.display = "block";
 }

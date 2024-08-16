@@ -20145,7 +20145,7 @@ nav .contact-btn button:hover {
   background-color: #fa3434;
 }
 
-.close {
+.close-menu {
   display: none;
 }
 
@@ -20153,8 +20153,15 @@ nav .contact-btn button:hover {
   nav .display-menu {
     display: flex;
   }
-  .close {
+  .close-menu {
     display: flex;
+    display-color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 5px;
+    right: 10px;
   }
   .menu {
     flex-direction: column;
@@ -20203,7 +20210,7 @@ nav .contact-btn button:hover {
   position: relative;
 }
 
-.close {
+.close1 {
   color: #aaa;
   float: right;
   font-size: 28px;
@@ -20212,7 +20219,7 @@ nav .contact-btn button:hover {
   top: 5px;
   right: 10px;
 }
-.close:hover, .close:focus {
+.close1:hover, .close1:focus {
   color: #000;
   text-decoration: none;
   cursor: pointer;
