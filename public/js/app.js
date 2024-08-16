@@ -20,16 +20,16 @@ window.onclick = function(event) {
 
 
 //*restaurant-Menu
-let btnrest = document.querySelector(".btnRest")
-let starBtn =document.querySelector(".starBtn")
-let brakBtn =document.querySelector(".brakBtn")
-let lunchBtn =document.querySelector(".lunchBtn")
-let dinnBtn =document.querySelector(".dinnBtn")
 
-starBtn.addEventListener("click",()=>{
-  // alert("okk")
+let star =document.querySelector(".star")
+let breakfast =document.querySelector(".breakfast")
+let lunch =document.querySelector(".lunch")
+let dinner =document.querySelector(".dinner")
+
+star.addEventListener("click",()=>{
+  
   let repas= document.querySelector("#title")
-  let palt = document.querySelector(".content-plat")
+  let palt = document.querySelector(".plat")
   repas.textContent = "Starters"
  
   
@@ -40,9 +40,9 @@ starBtn.addEventListener("click",()=>{
   
   
 })
-brakBtn.addEventListener("click",()=>{
+breakfast.addEventListener("click",()=>{
   let repas= document.querySelector("#title")
-  let palt = document.querySelector(".content-plat")
+  let palt = document.querySelector(".plat")
   repas.textContent = "Breakfast"
 
   palt.classList.add("anim")
@@ -50,9 +50,9 @@ brakBtn.addEventListener("click",()=>{
     palt.classList.remove("anim")
   }, 1000);
 })
-lunchBtn.addEventListener("click",()=>{
+lunch.addEventListener("click",()=>{
   let repas= document.querySelector("#title")
-  let palt = document.querySelector(".content-plat")
+  let palt = document.querySelector(".plat")
   repas.textContent = "Lunch"
 
   palt.classList.add("anim")
@@ -60,9 +60,9 @@ lunchBtn.addEventListener("click",()=>{
     palt.classList.remove("anim")
   }, 1000);
 })
-dinnBtn.addEventListener("click",()=>{
+dinner.addEventListener("click",()=>{
   let repas= document.querySelector("#title")
-  let palt = document.querySelector(".content-plat")
+  let palt = document.querySelector(".plat")
   repas.textContent = "dinner"
 
   palt.classList.add("anim")
@@ -83,7 +83,7 @@ const slideImage = (index, myBtn) => {
     containers.forEach(container => {
         if (container.id == carouselBtnAttribute) {
 
-            //! variables  sal7in  ghir  l lelement  li mt7a9a9 fih chart dyalna  
+           
             let slides = container.querySelectorAll(".slide")
             let camera = container.querySelector(".carousel")
             let slideWidth = slides[0].clientWidth

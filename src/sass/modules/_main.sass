@@ -32,8 +32,14 @@ body
         padding-top: 50px
         padding:20px
     button
+        background-color: #ce1212
+        padding: 6px 32px
+        border-radius: 50px
+        outline: none
+        border: none
+        text-decoration: none
         color: white
-        background-color: #d33333
+        font-weight: 500
     a
         text-decoration: none
         color: black
@@ -74,79 +80,79 @@ body
             display: flex
             flex-direction: row
             padding: 10px
+           
 .whychooseymmy
     display: flex
-    flex-direction: row
-    align-items: center 
-    text-align: center
-    justify-content: space-evenly
-    background-color: #f2f2f2
-    height: 80vh
-    #card1
-        width: 25vw
-        height: 70vh
-        padding: 10px
-        background-color: #ce1212
-        color: white 
-        button
-            background-color: #d01d1d
-            &:hover
-                background-color: white 
-                color: red        
-    .card
-        width: 20vw
-        height: 70vh
+    flex-direction: column
+                   
+    .cards
         display: flex
-        flex-direction: column
-        justify-content: center
-        align-content: center
+        flex-direction: row
+        align-items: center 
         text-align: center
-        gap: 10px
-        padding: 30px
-        &:hover
-            i
-                background: red 
-                color: white
-        i
-            text-align: center
-            font-size: xx-large
-            color: red
-            background-color: #ebddd8 
-            border-radius: 40%
+        justify-content: space-evenly
+        background-color: #f2f2f2
+        
+        #card1
+            width: 30%
             padding: 10px
-            
-            // &:hover
-            //     background: red 
-            //     color: white
-
-.count
-    display: flex
-    flex-direction: row
-    justify-content: space-around
-    align-items: center
-    text-align: center
-    background-image: url(../images/stats-bg.jpg)
-    position: relative
-    background-size: 100% 100%
-    width: 100%
-    height: 55vh
-    &::before
-        content: ""
-        position: absolute
-        top: 0
-        width: 100%
-        height: 100%
-        background: rgba(0, 0, 0, 0.278)
- 
-
-    .number
+            background-color: #ce1212
+            color: white 
+            button
+                background-color: #d01d1d
+                &:hover
+                    background-color: white 
+                    color: red        
+        .card
+            width: 20%
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-content: center
+            text-align: center
+            gap: 10px
+            padding: 40px
+            &:hover
+                i
+                    background: red 
+                    color: white
+            i
+                text-align: center
+                font-size: xx-large
+                color: red
+                background-color: #ebddd8 
+                border-radius: 40%
+                padding: 10px
+                
+                
+    .count
         display: flex
-        flex-direction: column
-        justify-content: center
+        flex-direction: row
+        justify-content: space-around
         align-items: center
         text-align: center
-        color: white
-        z-index: 9999
+        background-image: url(../images/stats-bg.jpg)
+        position: relative
+        background-size: 100% 100%
+        width: 100%
+        height: 55vh
+        &::before
+            content: ""
+            position: absolute
+            top: 0
+            width: 100%
+            height: 100%
+            background: rgba(0, 0, 0, 0.278)
+    
+
+        .number
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            text-align: center
+            color: white
+            z-index: 9999
         
 .restaurant-menu 
     display: flex
@@ -161,7 +167,7 @@ body
         padding-bottom: 6vh
     span
         color: #d11212
-    .btnRest
+    .rest
         display: flex
         flex-direction: row
         gap: 3.5vw
@@ -174,13 +180,13 @@ body
             padding-bottom: 1vh
             &:hover
                 border-bottom-color: #d11212
-    .content-rest
+    .content
         text-align: center
         padding-top: 3vh
         h3
             color: #d11212
             padding-bottom: 4vh
-    .content-plat
+    .plat
         display: flex
         flex-direction: column
         justify-content: center
@@ -216,7 +222,6 @@ body
  
     .carousel-container 
         width: 100vw
-        height: 80vh
         background: #f2f2f2
         position: relative
         overflow: hidden
@@ -414,28 +419,28 @@ body
     padding-top: 11vh
     p
         text-align: center
-    h2
+    h1
         span
             color: #ce1212
-    .table-row
+    .table-globale
         display: flex
         flex-direction: row
         padding: 0px
         margin-top: 4vh
-        .table-left
+        .left
             img
                 padding: 0px
-        .table-right
+        .right
             background-color: #f8f8f8
             padding: 1vh 2vw
-            // width:30%
-            .form-group
+            
+            .form-globale
                 background-color: #f8f8f8
                 padding: 12vh 1vw
                 display: flex
                 flex-direction: column
                 gap: 15px
-                .form-row 
+                .mini-form 
                     display: flex
                     flex-direction: row
                     gap: 20px
@@ -446,122 +451,140 @@ body
                     input
                         padding: 1vh 1.5vw
                         width: 15vw
-            .bookBtn
+            .buttonbook
                 button
+                    background: #ce1212
+                    padding: 6px 32px
+                    border-radius: 50px
+                    outline: none
                     border: none
-                    color: #fff
-                    padding: 2vh 5vw
-                    background-color: #ce2929
-                    border-radius: 5px
+                    text-decoration: none
+                    color: white
+                    font-weight: 500
                     &:hover
-                        background-color: #ce2929cc  
-.restaurant-gallery
-    width: 80vw
-    display: flex
-    flex-direction: row
-    align-items: center
-.gallery-container
-    display: flex
-    align-items: center
-    padding: 30vh 0
-    max-width: 100px
-    position: relative
-.gallery-item
-    height: 200px
-    opacity: 1
-    position: absolute
-    transition: all 0.4s ease in-out
-    width: 300px
-    // z-index: 1
-    border-radius: 10px
-    background-size: contain
-.gallery-item-1
-    left: 15vw
-    opacity: 0.9
-    transform: translateX(-50%)
-.gallery-item-2 , .gallery-item-4
-    height: 250px
-    opacity: 0.9
-    width: 360px
-    z-index: 1
-.gallery-item-2
-    left: 30vw
-    transform: translateX(-50%)
-.gallery-item-3
-    box-shadow: -2px 5px 33px 6px rgba(0,0 ,0 ,0.35 )
-    height: 300px
-    opacity: 1
-    left: 50vw
-    transform: translateX(-50%)
-    width: 400px
-    z-index: 2
-.gallery-item-4
-    left: 70vw
-    transform: translateX(-50%)
-.gallery-item-5
-    left: 85vw
-    opacity: 0.9
-    transform: translateX(-50%)
-.gallery-controls
-    display: flex
-    justify-content: center
-    margin: 25px 0
-    height: 100px
-    button
-        background-color: transparent
-        border: 0
-        cursor: pointer
-        font-size: 30px
-        margin: 0 50px
-        padding: 0 12px
-        text-transform: capitalize
-.gallery-controls-button
-    &:focus
-        outline: none
-.gallery-controls-previous
-    position: relative
-    &::before
-        border: solid #000
-        border-width: 0 5px 5px 0
-        content: ''
-        display: inline-block
-        height: 5px
-        left: -30vw
-        padding: 10px
+                        background-color: #ce2929cc 
+.restaurant-gallery                        
+    .gallerry-title
+        background-color: #f2f2f2
+        display: flex
+        flex-direction: column
+        justify-content: center 
+        padding-top: 5vh
+        h1
+            font-family: cursive
+            text-align: center
+        span
+            color: red
+        p
+            text-align: center                         
+    .gallery
+        width: 100vw
+        display: flex
+        flex-direction: row
+        align-items: center
+    .gallery-container
+        display: flex
+        align-items: center
+        padding: 30vh 0
+        max-width: 100px
+        position: relative
+    .gallery-item
+        height: 140px
+        opacity: 1
         position: absolute
-        top: 25vw
-        transform: rotate(135deg) translateY(-50%)
-        transition: left 0.30s ease in-out
-        width: 5px
-    &:hover::before
-        left: -40vw
-.gallery-controls-next
-    position: relative
-    &::before
-        border: solid #000
-        border-width: 0px 5px 5px 0px
-        content: ''
-        display: inline-block
-        height: 5px
-        right: -30vw
-        padding: 10px
+        transition: all 0.4s ease in-out
+        width: 180px
+    
+        background-size: contain
+    .gallery-item-1
+        left: 16vw
+        opacity: 0.9
+        transform: translateX(-50%)
+    .gallery-item-2 , .gallery-item-4
+        height: 160px
+        opacity: 0.8
+        width: 200px
+        z-index: 1
+    .gallery-item-2
+        left: 32vw
+        transform: translateX(-50%)
+    .gallery-item-3
+        box-shadow: -2px 5px 33px 6px rgba(0,0 ,0 ,0.35 )
+        height: 210px
+        opacity: 1
+        left: 50vw
+        transform: translateX(-50%)
+        width: 240px
+        z-index: 2
+        border: 5px solid #d11212
+    .gallery-item-4
+        left: 68vw
+        transform: translateX(-50%)
+    .gallery-item-5
+        left: 84vw
+        opacity: 0.9
+        transform: translateX(-50%)
+
+    .gallery-controls
+        display: flex
+        justify-content: center
+        margin: 25px 0
+        height: 100px
+        button
+            background-color: transparent
+            border: 0
+            cursor: pointer
+            font-size: 30px
+            margin: 0 50px
+            padding: 0 12px
+            text-transform: capitalize
+    .gallery-controls-button
+        &:focus
+            outline: none
+    .gallery-controls-previous
+        position: relative
+        &::before
+            border: solid #000
+            border-width: 0 5px 5px 0
+            content: ''
+            display: inline-block
+            height: 5px
+            left: -30vw
+            padding: 10px
+            position: absolute
+            top: 25vw
+            transform: rotate(135deg) translateY(-50%)
+            transition: left 0.30s ease in-out
+            width: 5px
+        &:hover::before
+            left: -40vw
+    .gallery-controls-next
+        position: relative
+        &::before
+            border: solid #000
+            border-width: 0px 5px 5px 0px
+            content: ''
+            display: inline-block
+            height: 5px
+            right: -30vw
+            padding: 10px
+            position: absolute
+            top: 45vw
+            transform: rotate(-45deg) translateY(-50%)
+            transition: right 0.30s ease in-out
+            width: 5px
+        &:hover::before
+            right: -40vw
+    .gallery-nav
+        display: flex
+        justify-content: center
+        list-style: none
+        padding: 0
         position: absolute
-        top: 45vw
-        transform: rotate(-45deg) translateY(-50%)
-        transition: right 0.30s ease in-out
-        width: 5px
-    &:hover::before
-        right: -40vw
-.gallery-nav
-    display: flex
-    justify-content: center
-    list-style: none
-    padding: 0
-    position: absolute
-    bottom: -30px 
-    width: 100%
-.gallery-nav
-    li
+        bottom: -30px 
+        width: 100%
+    .gallery-nav
+        li
         background-color: #ccc
         border-radius: 50%
         height: 10px
@@ -569,9 +592,8 @@ body
         width: 10px
         cursor: pointer
         transition: background-color 0.3s ease
-        &:active
-            background-color: #555                             
-
+        .active
+            background-color: #555
 .restaurant-chefs
     text-align: center
     padding: 20px
@@ -630,9 +652,8 @@ body
         img
             width: 90%
     .globale
-     
         flex-direction: column
-        width: 100%
+       
         img
             margin-top: 120px 
             width: 100%
@@ -643,22 +664,59 @@ body
         video
             width: 90%        
     .whychooseymmy
-        width: 100%
+
         flex-direction: column
-        #card1
+        .cards
+            
+            flex-direction: column 
+            #card1
+                width: 100%
+            .card
+                width: 100%
+         
+            
+        .count
             width: 100%
-            margin-top: 10px
-        .card
-            width: 100%
-            margin-top: 10px
-    .count
-        flex-direction: column
+            flex-direction: column
     .chef-res
         display: flex
         flex-direction: column
+    .carousel-globale
+        width: 100%
+        .carousel
+            width: 100%
+            .slide
+                width: 100%
+                flex-direction: column
+                // padding: 40px
+                .slide-left 
+                    width: 100%
+                img
+                    width: 100%
+
     .restaurant-menu
+      
         .content-plat
             flex-direction: column
         .plat-row
             flex-direction: column !important
+    .bookatable
+        .table-globale
+            flex-direction: column
+            .left
+                width: 100%
+            .right
+                width: 100%
+                .form-globale
+                    width: 100% 
+                    .mini-form
+                        input
+                            width: 100%    
+    .restaurant-contact
+        iframe
+            width: 90%                               
+    .restaurant-gallery 
+        width: 90%
+        .gallery-item-5
+
 
